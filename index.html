@@ -1,0 +1,266 @@
+<html>
+
+<head>
+    <title> KOFIPRO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" type="image/x-icon" href="img/lg.png">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-default">
+        <div class="container-fluid" id="cent">
+
+            <input type="checkbox" id="check" onclick="mar()">
+            <label for="check" class="checkbtn" onclick="mar()">
+        <i class="fas fa-bars"></i>
+      </label>
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="img/logo (1).png"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"> <a href="index.html">ACCUEIL</a></li>
+                <li class="cent" id="cent">
+                    <div class="log">
+                        <a href="#log" style="text-decoration: none; color: gray;">LOGICIELS ▼</a>
+                        <div class="drop">
+                            <a href="COMPTA.html">
+                                COMPTABILITE</a>
+                            <a href="SALAIRES.html">
+                                SALAIRES</a>
+                            <a href="gc.html">
+                                Gestion Comerciale</a>
+                            <a href="st.html">
+                                Simpl-TVA</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li> <a href="qsn.html">QUI SOMMES NOUS </a></li>
+                <li> <a href="#nc">NOS CLIENTS</a></li>
+                <li> <a href="#contact">CONTACT</a></li>
+                <li> <a href="commande.html">COMMANDE</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="galleryContainer" id="galleryContainer">
+        <div class="slideShowContainer">
+            <div id="playPause" onclick="playPauseSlides()"></div>
+            <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+            <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+            <div class="captionTextHolder">
+                <p class="captionText slideTextFromTop"></p>
+            </div>
+            <div class="imageHolder">
+                <img src="img/architect-composition-data-demonstration-313691.jpg">1366X768
+                <p class="captionText">KOFIPRO-Comptabilité,Simplicité,Télédéclaration !</p>
+            </div>
+            <div class="imageHolder">
+                <img src="img/person-holding-blue-ballpoint-pen-on-white-notebook-669610.jpg">
+                <p class="captionText">KOFIPRO-Paie Maitrise la Gestion de vos RH !</p>
+            </div>
+            <div class="imageHolder">
+                <img src="img/person-writing-on-white-paper-3815585.jpg">
+                <p class="captionText">KOFIPRO-Ventes Résout vop préoccupations !</p>
+            </div>
+            <div class="imageHolder">
+                <img src="img/white-paper-on-laptop-computer-2903063.jpg">
+                <p class="captionText">Simpl-TVA Gestion et Télédéclaration !</p>
+            </div>
+        </div>
+        <div id="dotsContainer"></div>
+        <script src="index.js"></script>
+    </div>
+    <h1 id="log">LOGICIELS</h1>
+    <p class="aprestitre">KOFIPRO regroupeun ensemble de logiciels facilitant la gestions globale de toutes entreprises confondues, avec des tableaux de bord simples, qui permettent un suivi quotidien de l'activité.</p>
+    <div class="container items">
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 col-sm-7" style="padding-top: 10px;">
+                <img src="img/charles-deluvio-OqxPH8c1UFE-unsplash.jpg" class="img-circle myimg">
+                <h3>Simpl-TVA EDI</h3>
+                <p class="onrow">- gère la saisie des Règlements.<br> - gère la Saisie des Encaissements.<br> - Edit les Etats des déductions et <br>des encaissements.<br> - Edit la Déclaration.<br> - Génère le fichier XML.</p><br>
+                <a href="st.html">details and Download</a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-7" style="padding-top: 10px;">
+                <img src="img/ray-reyes-3xwrg7Vv6Ts-unsplash.jpg" class="img-circle myimg">
+                <h3>Comptabilité</h3>
+                <p class="onrow">- Génère XML Simpl-IS.<br> - Génère XML des Factures de ventes<br> - Conforme aux normes Fiscales Maroc<br> - légales en matière d'obligations.</p><br>
+                <a href="compta.html">details and Download</a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-7" style="padding-top: 10px;">
+                <img src="img/sharon-mccutcheon--8a5eJ1-mmQ-unsplash.jpg" class="img-circle myimg">
+                <h3>Paie :</h3>
+                <p class="onrow">- Facilite la gestion des salaires.<br> - Affiche les données analytiques.<br> - Gère la Télé déclaration Simpl-IR.<br> - Gère la Télédéclaration Damancom </p><br>
+                <a href="salaires.html">details and Download</a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-7" id="last">
+                <img src="img/nick-morrison-FHnnjk1Yj7Y-unsplash.jpg" class="img-circle myimg">
+                <h3>Gestion Commerciale</h3>
+                <p class="onrow">- gère les Fournisseurs.<br> - gère les Clients.<br> - gère le Stock.<br> - Edit les Factures Clients.</p><br>
+                <a href="gc.html">details and Download</a>
+            </div>
+        </div>
+    </div>
+    <a href="#cent" class="cir">
+        <i class="fas fa-arrow-circle-up"></i></a>
+    <h1 id="nc">Nos Clients Temoignent</h1>
+    <p class="aprestitre">Ayez confiance a KOFIPRO, le leader des Genies logiciels de la 5eme generation; vous serez satisfait comme nous le sommes actuellement</p>
+    <div class="app">
+        <div class="full hide-scroll">
+
+            <ul class="hs">
+                <li class="item"> <i class="far fa-user"></i>
+                    <h2 style="font-size: 2.3vw;"> Mme Rabia RH </h2>
+                    <h3 style="color: rgb(248, 131, 89); font-size: 2vw;">Flora Mode</h3>
+                    <p style="color: grey; font-size: 1.2vw;">J'ai eu énormément de plaisir à collaborer avec l'équipe de KOFIPRO qui nous a accompagné dans la mise en place d'un logiciel de gestion commerciale et qui a su parfaitement intégrer nos besoins et y répondre avec réactivité et justesse.
+                        KOFIPRO-GestCom est un Logiciel très fort qui simplifie la gestion de stock, la facturation et la maitrise de la situation de nos clients ...</p>
+                </li>
+                <li class="item"> <i class="far fa-user"></i>
+                    <h2 style="font-size: 2.3vw;">Mr Alami </h2>
+                    <h3 style="color: rgb(248, 131, 89); font-size: 2vw;">Directeur Général</h3>
+                    <p style="color: grey; font-size: 1.2vw;"> La simplicité et l’efficacité sont les deux points forts du logiciel KOFIPRO. Etant une entreprise de service, l’équipe de développement a vite pu adapter la plateforme à nos besoins afin de nous simplifier la gestion des tâches administratives
+                        quotidiennes et nous permettre de nous concentrer sur notre métier de base...</p>
+                </li>
+                <li class="item"> <i class="far fa-user"></i>
+                    <h2 style="font-size: 2.3vw;">BOURISSAI Gérant </h2>
+                    <h3 style="color: rgb(248, 131, 89); font-size: 2vw;">Fiduciaire IITIMANE</h3>
+                    <p style="color: grey; font-size: 1.2vw;"> La simplicité et l’efficacité sont les deux points forts du logiciel KOFIPRO. Etant une entreprise de service, l’équipe de développement a vite pu adapter la plateforme à nos besoins afin de nous simplifier la gestion des tâches administratives
+                        quotidiennes et nous permettre de nous concentrer sur notre métier de base.</p>
+                </li>
+                <li class="item"> <i class="far fa-user"></i>
+                    <h2 style="font-size: 2.3vw;">Mme Zohra Gérante </h2>
+                    <h3 style="color: rgb(248, 131, 89); font-size: 2vw;">Fiduciaire FIDU HORISON</h3>
+                    <p style="color: grey; font-size: 1.2vw;">J'ai eu l'honneur de faire partie des premières PME marocaines ayant adopté l'application KOFIPRO depuis 2016. Je tiens à remercier toute l'équipe KOFIPRO, une équipe jeune et dynamique, pour ses efforts, ses conseils et sa disponibilité.
+                        durant la phase de prise en main, qui a été pour moi personnellement ...</p>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="container">
+        </div>
+    </div>
+
+
+    <h1 id="contact">contactez-nous</h1>
+    <p class="aprestitre">Nous y répondrons rapidement.</p>
+    <section id="contact" class="contact-area pt-125 pb-130 gray-bg">
+        <div class="container">
+            <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Adresse</h6>
+                            <p>Avenue Ben Bureaux Palace N° 29 4éme Étage - FES</p>
+                        </div>
+                    </div>
+                    <!-- contact box -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-content" style="text-align: center;">
+                            <h6 class="contact-title">Phone</h6>
+                            <p>08 -- -- -- 99</p>
+                            <p>06 -- -- -- 70</p>
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <!-- contact box -->
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Email</h6>
+                            <p>ipro@gmail.com</p>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                        </div>
+
+                    </div>
+                    <!-- contact box -->
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-form pt-30">
+                        <form id="contact-form" action="contact.php">
+                            <div class="single-form">
+                                <input type="text" name="name" placeholder="Name">
+                            </div>
+                            <!-- single form -->
+                            <div class="single-form">
+                                <input type="email" name="email" placeholder="Email">
+                            </div>
+                            <!-- single form -->
+                            <div class="single-form">
+                                <textarea name="message" placeholder="Message"></textarea>
+                            </div>
+                            <!-- single form -->
+                            <p class="form-message"></p>
+                            <div class="single-form">
+                                <button class="main-btn" type="submit">Send Message</button>
+                            </div>
+                            <!-- single form -->
+                        </form>
+                    </div>
+                    <!-- contact form -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-map mt-60">
+                        <div class="gmap_canvas">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.2283353928697!2d-5.001457684785334!3d34.038013480609884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDAyJzE2LjkiTiA0wrA1OSc1Ny40Ilc!5e0!3m2!1sen!2sma!4v1597583949050!5m2!1sen!2sma"
+                                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+                    <!-- contact map -->
+                </div>
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+    </section>
+
+
+
+    <footer>
+        <div>
+            <img src="img/logo (1).png">
+            <p>les logiciels KOFIPRO rependent a tous vos besoins de gestion et d'analyse <br> des donnees de teledeclarations et plus encore.</p>
+            <a href="https://www.facebook.com/kouarti"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"> <i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    <div class="copy">
+        copyright 2020.Template crafted by <a href="index.html"> KOFIPRO</a> <a href="index.html #contact">CONTACT</a>
+    </div>
+</body>
+
+</html>

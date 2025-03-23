@@ -1,0 +1,237 @@
+<html>
+
+<head>
+    <title> KOFIPRO</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="commande.css">
+    <link rel="icon" type="image/x-icon" href="img/lg.png">
+
+</head>
+
+<body>
+    <div class="navbar navbar-default">
+        <div class="container-fluid" id="cent">
+
+
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.html"><img src="img/logo (1).png"></a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li> <a href="index.html">ACCUEIL</a></li>
+                <li class="cent" id="cent">
+                    <div class="log" style="margin-top: 12px;">
+                        <a href="#log" style="text-decoration: none; color: gray; ">LOGICIELS ▼</a>
+                        <div class="drop">
+                            <a href="COMPTA.html">
+                                COMPTABILITE</a>
+                            <a href="SALAIRES.html">
+                                SALAIRES</a>
+                            <a href="gc.html">
+                                Gestion Comerciale</a>
+                            <a href="st.html">
+                                Simpl-TVA</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li> <a href="qsn.html">QUI SOMMES NOUS </a></li>
+                <li> <a href="#nc">NOS CLIENTS</a></li>
+                <li> <a href="#contact">CONTACT</a></li>
+                <li class="active"> <a href="commande.html">COMMANDE</a></li>
+            </ul>
+        </div>
+    </div>
+    <h2>
+        Pour commander en ligne</h2>
+
+
+    <p class="befor-table">
+        il suffit de cliquer sur le bouton <i class="fas fa-plus-square" style="color: rgb(244, 124, 49);"></i> Ajouter au panier en fin de ligne de description d'un produit.
+        <br></p>
+    <p style="margin-top: 10px; text-align: center; font-size: 15px; color: grey;">si vous avez besoin d'aide <a href="index.html#contact" style="color:rgb(244, 124, 49) ;">contactez nous .</a> </p>
+    <table>
+        <tr>
+            <th>LOGICIELS</th>
+            <th>PRIX en dhs</th>
+            <span></span>
+            <th> <i class="fa fa-shopping-cart"></i></th>
+        </tr>
+        <tr id="copy-1">
+            <td>COMPTABILITE</td>
+            <td>300 dhs</td>
+            <span></span>
+            <td><button onclick=" myFunction()" id="bt1"><i  class="fas fa-plus-square"></i></button></td>
+        </tr>
+        <tr id="copy-2">
+            <td>SALAIRES</td>
+            <td>300 dhs</td>
+            <span></span>
+            <td><button onclick=" myFunction()" id="bt2"><i   class="fas fa-plus-square"></i></button></td>
+        </tr>
+        <tr id="copy-3">
+            <td>Gestion Comerciale</td>
+            <td>300 dhs</td>
+
+            <td><button  onclick=" myFunction()" id="bt3"><i   class="fas fa-plus-square"></i></button></td>
+        </tr>
+        <tr id="copy-4">
+            <td>Simpl-TVA</td>
+            <td>300 dhs</td>
+            <span></span>
+            <td><button  onclick=" myFunction()" id="bt4" ><i  class="fas fa-plus-square"></i></button></td>
+        </tr>
+
+    </table>
+    <div class="voir" style="text-align:center">
+        <p style="color: black; font-size: 18px;">voir le panier</p>
+        <h1> <i id="pan" class="fa fa-shopping-cart" style="color: rgb(244, 124, 49); font-size: 30px; text-align: center;"></i></h1>
+    </div>
+
+
+
+    <div class="app">
+        <div class="full hide-scroll">
+
+            <ul class="hs">
+                <li class="item">
+
+                    <h3 style="color: rgb(248, 131, 89); font-size: 2vw;">COMPTABILITE</h3>
+                    <p style="color: grey; font-size: 1.2vw;">- Génère XML Simpl-IS.<br> - Génère XML des Factures de ventes<br> - Conforme aux normes Fiscales Maroc<br> - légales en matière d'obligations.</p>
+                </li>
+                <li class="item">
+
+                    <h3 style="color: rgb(248, 131, 89); font-size: 2vw;">SALAIRES</h3>
+                    <p style="color: grey; font-size: 1.2vw;">- Facilite la gestion des salaires.<br> - Affiche les données analytiques.<br> - Gère la Télé déclaration Simpl-IR.<br> - Gère la Télédéclaration Damancom </p>
+                </li>
+                <li class="item">
+                    <h3 style="color: rgb(248, 131, 89); font-size: 2vw;">Gestion Comerciale</h3>
+                    <p style="color: grey; font-size: 1.2vw;">- gère les Fournisseurs.<br> - gère les Clients.<br> - gère le Stock.<br> - Edit les Factures Clients.</p>
+                </li>
+                <li class="item">
+
+                    <h3 style="color: rgb(248, 131, 89); font-size: 2vw;">Simpl-TVA</h3>
+                    <p style="color: grey; font-size: 1.2vw;">- gère la saisie des Règlements.<br> - gère la Saisie des Encaissements.<br> - Edit les Etats des déductions et <br>des encaissements.<br> - Edit la Déclaration.<br> - Génère le fichier XML.</p>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <div class="container">
+        </div>
+    </div>
+    <div class="select" id="sel1">
+
+         <a href="login.html"><input type="button" name="onclick" value="Buy-now" class="login"></a>
+        
+ 
+    </div>
+
+    <footer>
+        <div>
+            <img src="img/logo (1).png">
+            <p>les logiciels KOFIPRO rependent a tous vos besoins de gestion et d'analyse <br> des donnees de teledeclarations et plus encore.</p>
+            <a href="https://www.facebook.com/kouarti"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"> <i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    <div class="copy">
+        copyright 2020.Template crafted by <a href="index.html"> KOFIPRO</a> <a href="index.html #contact">CONTACT</a>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+
+
+
+ var noti = document.querySelector('h1');
+    var select = document.querySelector('.select');
+
+ var a=0;
+        function myFunction(){
+             a=a+1;
+             document.getElementById('pan').innerHTML = a;
+            } 
+
+ document.getElementById("bt1").addEventListener("click", myFunction1);
+
+        function myFunction1(){
+            
+             var parent = document.getElementById('copy-1');
+             var clone = parent.cloneNode(true);
+            select.appendChild(clone);
+            clone.lastElementChild.innerText ="";
+            if (clone) {
+                noti.onclick = () => {
+                    select.classList.toggle('display');
+
+
+                }
+                
+              
+            }
+
+                    }
+
+
+
+ document.getElementById("bt2").addEventListener("click", myFunction2);
+        
+        function myFunction2(){
+
+             var parent = document.getElementById('copy-2');
+            var clone = parent.cloneNode(true);
+            select.appendChild(clone);
+            clone.lastElementChild.innerText = "";
+            if (clone) {
+                noti.onclick = () => {
+                    select.classList.toggle('display');
+                  
+                }
+            }
+        }
+
+
+   document.getElementById("bt3").addEventListener("click", myFunction3);
+        
+        function myFunction3(){
+            var parent = document.getElementById('copy-3');
+            var clone = parent.cloneNode(true);
+            select.appendChild(clone);
+            clone.lastElementChild.innerText = "";
+            if (clone) {
+                noti.onclick = () => {
+                    select.classList.toggle('display');
+                }
+            }
+        }
+
+
+
+         
+       document.getElementById("bt4").addEventListener("click", myFunction4);
+        function myFunction4(){
+            var parent = document.getElementById('copy-4');
+            var clone = parent.cloneNode(true);
+            select.appendChild(clone);
+            clone.lastElementChild.innerText = "";
+            if (clone) {
+                noti.onclick = () => {
+                    select.classList.toggle('display');
+                }
+            }
+        }
+
+
+
+</script>

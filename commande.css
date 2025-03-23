@@ -1,0 +1,326 @@
+.navbar.navbar-default {
+    background-image: linear-gradient(rgb(244, 124, 49), white);
+    height: 60px;
+    font-size: 15px;
+}
+
+.navbar.navbar-default .container-fluid .navbar-header .navbar-brand>img {
+    height: 60px;
+    margin-top: -15px;
+    margin-left: -18;
+}
+
+.navbar.navbar-default .container-fluid>ul.nav.navbar-nav {
+    margin-top: 6px;
+    transition: all 1s;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.navbar.navbar-default .container-fluid>ul.nav.navbar-nav>li {
+    margin-left: 20px;
+    color: gray;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-image: linear-gradient(white, rgb(244, 124, 49));
+    border-radius: 5px;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: rgb(244, 124, 49);
+}
+
+.navbar.navbar-default .container-fluid .nav.navbar-nav .cent .log .drop {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9e8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navbar.navbar-default .container-fluid .nav.navbar-nav .cent .log:hover .drop {
+    display: block;
+    border-radius: 15px;
+}
+
+.navbar.navbar-default .container-fluid .nav.navbar-nav .cent .log:hover>a {
+    color: rgb(244, 124, 49) !important;
+    display: block;
+    transition: .5s;
+    border-radius: 15px;
+}
+
+.navbar.navbar-default .container-fluid .nav.navbar-nav .cent .log .drop a {
+    color: gray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar.navbar-default .container-fluid .nav.navbar-nav .cent .log .drop a:hover {
+    color: rgb(244, 124, 49);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.navbar.navbar-default .container-fluid .nav.navbar-nav .cent .log>a:link {
+    color: gray;
+}
+
+@media (max-width: 952px) {
+    .navbar.navbar-default .container-fluid .navbar-header .navbar-brand {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    /*.navbar.navbar-default .container-fluid .nav.navbar-nav .cent .log:hover .drop {
+    display: none;
+    
+  }.galleryContainer{
+    margin-top: 20%;
+    clear: both;
+  }*/
+    .navbar.navbar-default .container-fluid .nav.navbar-nav ul li a {
+        font-size: 16px;
+    }
+}
+
+footer>div>a {
+    font-size: 40px;
+    padding-left: 20px;
+    color: orangered;
+}
+
+footer>div>a:hover {
+    color: gray;
+}
+
+footer>div>p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 21px;
+}
+
+footer {
+    text-align: center;
+    border: solid grey;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.copy {
+    margin: 21px;
+    color: grey;
+    font-size: 15px;
+}
+
+.copy>a {
+    color: orangered !important;
+}
+
+table {
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    width: 60%;
+    margin-left: 20%;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+table td,
+table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(244, 124, 49);
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.befor-table {
+    width: 30%;
+    color: grey;
+    text-align: center;
+    margin-left: 35%;
+    font-size: 18px;
+}
+
+.voir {
+    text-align: center;
+    margin-top: 20px;
+}
+
+:root {
+    --gutter: 20px;
+}
+
+.app {
+    padding: var(--gutter) 0;
+    display: grid;
+    grid-gap: var(--gutter) 0;
+    grid-template-columns: var(--gutter) 1fr var(--gutter);
+    align-content: start;
+    margin-top: 30px;
+}
+
+.app>* {
+    grid-column: 2 / -2;
+}
+
+.app>.full {
+    grid-column: 1 / -1;
+    height: 310px;
+}
+
+.hs {
+    display: grid;
+    grid-gap: calc(var(--gutter) / 2);
+    grid-template-columns: 10px repeat(6, calc(30% - var(--gutter) * 2)) 10px;
+    grid-template-rows: minmax(250px, 1fr);
+    scroll-snap-type: x proximity;
+    padding-bottom: calc(.75 * var(--gutter));
+    margin-bottom: calc(-.5 * var(--gutter));
+}
+
+.hs:before,
+.hs:after {
+    content: '';
+}
+
+
+/* Hide scrollbar */
+
+.hide-scroll {
+    overflow-y: hidden;
+    margin-bottom: calc(-.1 * var(--gutter));
+}
+
+
+/* Demo styles */
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.app {
+    width: 100%;
+    height: 525px;
+    overflow-y: scroll;
+}
+
+.hs>li,
+.item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    border: solid 1px rgb(255, 112, 60);
+    padding: 20px;
+}
+
+.item>i {
+    color: rgb(255, 112, 60);
+    font-size: 5vw;
+}
+
+.select {
+    width: 60%;
+    height: 580px;
+    background-color: rgb(255, 191, 129);
+    position: absolute;
+    top: -1000px;
+    left: 20%;
+    transition: 0.5s;
+    overflow-y: auto;
+    margin: auto;
+}
+
+.select.display {
+    top: 10px;
+    height: 70%;
+}
+
+.select div button {
+    left: 60%;
+    top: 55%;
+}
+
+#sel1 tr td {
+    color: black;
+    padding: 10px;
+}
+
+.select.display>button {
+    float: right;
+}
+
+.select.display>tr {
+    font-size: 20px;
+}
+
+.select div span {
+    display: none;
+}
+
+h1 {
+    position: relative;
+    cursor: pointer;
+}
+
+h1::before {
+    content: attr(data-count);
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    top: -11px;
+    width: 20px;
+    height: 20px;
+    background: grey;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+h1.zero::before {
+    opacity: 1;
+}
+
+.login {
+    float: right;
+    background-color: rgb(244, 124, 49);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin-top: 2%;
+    margin-right: 3%;
+    cursor: pointer;
+    )
+}
